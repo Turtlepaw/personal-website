@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       <main className="main">
         {
           Configuration.Avatar != null &&
-          <Image
+          <img
             src={Configuration.Avatar}
             alt="Avatar"
             width="100rem"
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                         <Center className='pb-5'>
                           <div className={e.IconBackground == true ? "bg-gray-600 rounded-full w-[4rem] h-[4rem]" : ""}>
                             <Center className='justify-center flex align-middle items-center Center'>
-                              <Image
+                              <img
                                 src={e.Icon}
                                 alt="Card Icon"
                                 width="38rem"
@@ -108,12 +108,15 @@ const Home: NextPage = () => {
                         </Center>
                       ) : (
                         <div className='pb-2'>
-                          <Image
+                          <Center>
+                          <img
                             src={e.Icon}
                             alt="Card Icon"
                             width="40rem"
                             height="40rem"
+                            className='py-4'
                           />
+                          </Center>
                         </div>
                       )
                     )

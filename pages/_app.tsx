@@ -240,7 +240,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <meta property="twitter:title" content={Configuration.Name} />
           <meta property="twitter:description" content={Configuration.Description} />
           <meta property="twitter:image" content={Configuration.Avatar} />
-          
+
           <link rel="icon" href={Configuration.Avatar} />
         </Head>
         <Component {...pageProps} />
