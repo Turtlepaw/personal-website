@@ -88,12 +88,17 @@ export interface WebsiteConfiguration {
    * The style of the Links.
    */
   LinkStyle?: LinkStyle;
+  /**
+   * The website url for the embed.
+   */
+  WebsiteURL: URL;
 }
 
 // Configuration*
 // ^ This is required
 // This is what'll appear on your website
 export const Configuration: WebsiteConfiguration = {
+  WebsiteURL: "https://example.com/",
   Name: "Username",
   Avatar: "/Avatar.svg",
   DiscordTag: "#0000",
@@ -216,13 +221,30 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="Background Text">
       <ChakraProvider theme={theme}>
-      <Head>
-        <title>{Configuration.Name}</title>
-        <meta name="description" content={Configuration.Description} />
-        <link rel="icon" href={Configuration.Avatar} />
-      </Head>
-      <Component {...pageProps} />
-    </ChakraProvider>
+        <Head>
+          <title>{Configuration.Name}</title>
+          {/* Primary Meta Tags */}
+          <meta name="title" content={Configuration.Name} />
+          <meta name="description" content={Configuration.Description} />
+
+          {/* Open Graph / Facebook */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={Configuration.WebsiteURL} />
+          <meta property="og:title" content={Configuration.Name} />
+          <meta property="og:description" content={Configuration.Description} />
+          <meta property="og:image" content={Configuration.Avatar} />
+
+          {/* Twitter */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content={Configuration.WebsiteURL} />
+          <meta property="twitter:title" content={Configuration.Name} />
+          <meta property="twitter:description" content={Configuration.Description} />
+          <meta property="twitter:image" content={Configuration.Avatar} />
+          
+          <link rel="icon" href={Configuration.Avatar} />
+        </Head>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </div>
   )
 }

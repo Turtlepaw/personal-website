@@ -13,6 +13,7 @@ This is a template for a personal website, it's pretty easy to setup.
 - [Notes](#notes)
     - [Icons](#icons)
     - [Configurable Text/Items](#configurable-textitems)
+- [Changelog](#changelog)
 
 ## Preview
 <img src="./media/msedge_8PyZ5XJ8Xe.png" width="300rem"/>
@@ -61,3 +62,10 @@ If you're looking to get more of the icons provided, they are from Fluent Icons 
 - `Navigation Links (located at the top of thepage)`
 - `The title (default: Username)`
 - `Discord Tag (default: #0000)`
+
+## Changelog
+
+### 10/21/22
+- Add embed support
+### 10/21/22
+- Publish
