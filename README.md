@@ -52,6 +52,22 @@ export const Configuration: WebsiteConfiguration = {
 
 If you want to edit more than that, just edit the React code!
 
+## Adding Redirection Links
+Start by going into `next.config.js`, you can create a redirection link like this:
+
+```js
+const nextConfig = {
+  //...
+  async redirects() {
+    return [
+      ...MultipleLinks("https://discord.com/", "/r"),
+      // You can put more links here by copying the
+      // code above.
+    ]
+  }
+}
+```
+
 ## Notes
 #### Icons
 If you're looking to get more of the icons provided, they are from Fluent Icons by Microsoft, I'm using [this website](https://fluenticons.co) to find and download them.
@@ -66,6 +82,7 @@ If you're looking to get more of the icons provided, they are from Fluent Icons 
 ## Changelog
 
 ### 10/21/22
+- Add redirection support
 - Add embed support
 ### 10/21/22
 - Publish
