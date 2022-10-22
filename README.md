@@ -82,6 +82,8 @@ If you're looking to get more of the icons provided, they are from Fluent Icons 
 ## Changelog
 
 ### 10/21/22
+- Fix interactable support
+- Add support for rounded icons
 - Add redirection support
 - Add embed support
 ### 10/21/22

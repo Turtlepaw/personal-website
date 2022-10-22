@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             className="rounded-full"
           />
         }
-        <h1 className="font-black text-3xl mt-5">
+        <h1 className="font-bold text-3xl mt-5">
           {Configuration.Name}<span className="DiscordTag">{Configuration.DiscordTag}</span>
         </h1>
         <hr className='mt-5 w-[30rem]' />
@@ -90,18 +90,19 @@ const Home: NextPage = () => {
           <div className="gridDisplay">
             {Configuration.Sections.map(e => (
               <a href={e.Link}>
-                <div className='px-20 py-5 card text-center'>
+                <div className={`px-20 py-5 card text-center ${e.Interactable && "ActiveCard"}`}>
                   {
                     e.Icon != null && (
                       e.IconBackground == true ? (
                         <Center className='pb-5'>
-                          <div className={e.IconBackground == true ? "bg-gray-600 rounded-full w-[4rem] h-[4rem]" : ""}>
+                          <div className={e.IconBackground == true ? "bg-gray-600 rounded-full w-[4rem] h-[4rem] py-4" : ""}>
                             <Center className='justify-center flex align-middle items-center Center'>
                               <img
                                 src={e.Icon}
                                 alt="Card Icon"
                                 width="38rem"
                                 height="38rem"
+                                className={`${e.IconRounded}`}
                               />
                             </Center>
                           </div>
@@ -114,7 +115,7 @@ const Home: NextPage = () => {
                             alt="Card Icon"
                             width="40rem"
                             height="40rem"
-                            className='py-4'
+                            className={`${e.IconRounded} my-4`}
                           />
                           </Center>
                         </div>

@@ -10,6 +10,18 @@ export type URL = `${"http" | "https"}://${string}.${string}` | `/${string}` | `
 export type ImageURL = `/${string}.${"svg" | "png" | "jpg" | "jpeg"}` | URL;
 export type DiscordTag = `#${number}${number}${number}${number}`
 
+export enum TailwindRoundedSizes {
+  ExtraLarge = "rounded-xl",
+  Large = "rounded-lg",
+  Medium = "rounded-md",
+  Small = "rounded-sm",
+  ExtraSmall = "rounded-sm",
+  Full = "rounded-full",
+  // Here you can create a custom
+  // rounded preset.
+  Custom = "rounded=[.5rem]"
+};
+
 export enum LinkStyle {
   /**
    * Similar like the "Connections" tab in Discord.
@@ -37,6 +49,10 @@ export interface WebsiteSection {
    * If the icon selected should have a gray background.
    */
   IconBackground?: boolean;
+  /**
+   * If the Icon should have rounded corners.
+   */
+  IconRounded?: TailwindRoundedSizes;
   /**
    * The emoji that will appear as the icon.
    */
