@@ -5,16 +5,25 @@ This is a template for a personal website, it's pretty easy to setup.
 </div>
 
 ### Table of Contents
+- [Features](#features)
 - [Preview](#preview)
 - [Setup](#setup)
     - [Deploying with Vercel](#deploying-with-vercel)
     - [Setup Guide](#setup-guide)
 - [Advanced Configuration](#advanced-configuration)
+- [Adding Redirection Links](#adding-redirection-links)
 - [Notes](#notes)
     - [Icons](#icons)
     - [Configurable Text/Items](#configurable-textitems)
 - [Changelog](#changelog)
 
+## Features
+- 🖼️ Embed Support
+- 🌿 
+Stylish
+- ⚙️ Easy configuration
+- 🚀 Preloaded Icons
+- 🛠️ Built in Typescript
 ## Preview
 <img src="./media/msedge_8PyZ5XJ8Xe.png" width="300rem"/>
 
@@ -48,7 +57,7 @@ export const Configuration: WebsiteConfiguration = {
   Description: "Hello, I'm an open-source personal website template!"
 }
 ```
-***Pro Tip:** Hover on a propertie (e.g. `Name`) to get more information on it.*
+***Pro Tip:** Hover on a property (e.g. `Name`) to get more information on it.*
 
 If you want to edit more than that, just edit the React code!
 
