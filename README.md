@@ -94,6 +94,9 @@ Skill icons (shown in `My Skills` or in `/public/icons`) were put together by [S
 
 ## Changelog
 ### 10/23/2022
+- Add more skill icons
+- Fix bug where `SkillStyle` would always be `Block`
+### 10/23/2022
 - Add `My Skills` section
 - Add skill icons
 ### 10/21/2022

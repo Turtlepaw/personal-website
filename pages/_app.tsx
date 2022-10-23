@@ -33,7 +33,25 @@ export enum LinkStyle {
 export enum Icons {
   React = "/icons/React-Dark.svg",
   CSS = "/icons/CSS.svg",
-  HTML = "/icons/HTML.svg"
+  HTML = "/icons/HTML.svg",
+  Discord = "/icons/Discord.svg",
+  Blender = "/icons/Blender-Dark.svg",
+  Cloudflare = "/icons/Cloudflare-Dark.svg",
+  Codepen = "/icons/CodePen-Dark.svg",
+  ExpressJS = "/icons/ExpressJS-Dark.svg",
+  Git = "/icons/Git.svg",
+  Github = "/icons/Github-Dark.svg",
+  Markdown = "/icons/Markdown-Dark.svg",
+  NextJS = "/icons/NextJS-Dark.svg",
+  Vercel = "/icons/Vercel-Dark.svg",
+  StackOverflow = "/icons/StackOverflow-Dark.svg",
+  SVG = "/icons/SVG-Dark.svg",
+  Twitter = "/icons/Twitter.svg",
+  VisualStudio = "/icons/VisualStudio-Dark.svg",
+  VSCode = "/icons/VSCode-Dark.svg",
+  JavaScript = "/icons/JavaScript.svg",
+  NodeJS = "/icons/NodeJS-Dark.svg",
+  DiscordBots = "/icons/DiscordBots.svg",
 }
 
 export enum SkillStyles {
