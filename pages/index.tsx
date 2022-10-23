@@ -92,10 +92,13 @@ const Home: NextPage = () => {
               <h2 className='uppercase font-bold text-lg'>My Skills</h2>
               <div className={`${Configuration.SkillStyle}`}>
                 {
-                  Configuration.SkillStyle == SkillStyles.Block ? (
-                    <Center className='pt-3'>
-                      <img src={`https://skillicons.dev/icons?i=${Configuration.Skills.map(e => e.substring(7, e.length).replace("-Dark", "").replace(".svg", "").toLowerCase()).join(",")}`} />
-                    </Center>
+                  (Configuration.SkillStyle.length > 0) ? (
+                    <div className='pt-3 FlexContainer2'>
+                      {Configuration.Skills.map(e => {
+                        const URL = "https://skillicons.dev/icons?i=" + (e.substring(7, e.length).replace("-Dark", "").replace(".svg", "").toLowerCase())
+                        return <img src={URL} className="mx-1 my-1 FlexItem2 w-1"/>
+                      })}
+                    </div>
                   ) : (
                     <Center className='mt-2'>
                       {Configuration.Skills.map(e => {

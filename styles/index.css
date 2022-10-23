@@ -154,6 +154,16 @@
   flex: 0 26%;
 }
 
+.FlexContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.FlexItem2 {
+  flex: 0 20%;
+}
+
 .Role {
   background-color: #292b2f;
 }
