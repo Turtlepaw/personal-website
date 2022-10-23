@@ -43,7 +43,7 @@ export enum SkillStyles {
    *  Similar to a Discord Role
    */
   Block = "",
-  None = ""
+  None = "none"
 }
 
 export interface WebsiteLink {
