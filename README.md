@@ -80,20 +80,26 @@ const nextConfig = {
 ## Notes
 #### Icons
 If you're looking to get more of the icons provided, they are from Fluent Icons by Microsoft, I'm using [this website](https://fluenticons.co) to find and download them.
+
+#### Skill Icons
+Skill icons (shown in `My Skills` or in `/public/icons`) were put together by [Skill Icons](https://skillicons.dev/). Check out their [license](https://github.com/Turtlepaw/personal-website/blob/main/SkillIcons_LICENSE) or their [Github](https://github.com/tandpfun/skill-icons)
 #### Configurable Text/Items
 - `About me (the text)`
 - `Where you can find me (all the links)`
+- `My Skills (all your skills)`
 - `What I do (all the cards)`
 - `Navigation Links (located at the top of thepage)`
 - `The title (default: Username)`
 - `Discord Tag (default: #0000)`
 
 ## Changelog
-
-### 10/21/22
+### 10/23/2022
+- Add `My Skills` section
+- Add skill icons
+### 10/21/2022
 - Fix interactable support
 - Add support for rounded icons
 - Add redirection support
 - Add embed support
-### 10/21/22
+### 10/21/2022
 - Publish

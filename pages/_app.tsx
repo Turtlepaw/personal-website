@@ -30,6 +30,22 @@ export enum LinkStyle {
   None = ""
 }
 
+export enum Icons {
+  React = "/icons/React-Dark.svg",
+  CSS = "/icons/CSS.svg",
+  HTML = "/icons/HTML.svg"
+}
+
+export enum SkillStyles {
+  Card = "card px-5 py-5",
+  InteractableCard = "card ActiveCard px-5 py-5",
+  /**
+   *  Similar to a Discord Role
+   */
+  Block = "",
+  None = ""
+}
+
 export interface WebsiteLink {
   URL: URL;
   Icon?: ImageURL;
@@ -108,6 +124,14 @@ export interface WebsiteConfiguration {
    * The website url for the embed.
    */
   WebsiteURL: URL;
+  /**
+   * The skills to appear in the "MY SKILLS" section.
+   */
+  Skills?: (Icons | string)[];
+  /**
+   * The style to display your skills in.
+   */
+  SkillStyle?: SkillStyles;
 }
 
 // Configuration*
@@ -166,7 +190,13 @@ export const Configuration: WebsiteConfiguration = {
     Emoji: "⚙️",
     Title: "Easy to Configure",
     Description: "With the configuration object, you can configure some features, and if you want to configure more, you can always edit the React code."
-  }]
+  }],
+  Skills: [
+    Icons.CSS,
+    Icons.HTML,
+    Icons.React
+  ],
+  SkillStyle: SkillStyles.Block
 }
 
 
